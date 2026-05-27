@@ -35,4 +35,4 @@ An AI-powered application that lets you upload any PDF and ask questions about i
 
 ## Demo
 
-[Add a screenshot or screen recording here]
+![DocChat demo](doccatgif.gif)
