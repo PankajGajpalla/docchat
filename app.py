@@ -57,7 +57,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 if "llm" not in st.session_state:
-    st.session_state.llm = ChatGroq(model="openai/gpt-oss-20b", api_key=os.getenv("GROQ_API_KEY"))
+    st.session_state.llm = ChatGroq(model="openai/gpt-oss-20b", api_key=os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY"))
 
 # --- Display chat history ---
 for msg in st.session_state.messages:
